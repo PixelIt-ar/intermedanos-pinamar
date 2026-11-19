@@ -1,0 +1,15 @@
+{
+  "name": "intermedanos-pinamar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Súper-App de Guardería Intermédanos × Pinamar & La Frontera (Ecosistema PIXEL.IT)",
+  "type": "module",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
