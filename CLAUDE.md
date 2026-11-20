@@ -86,12 +86,13 @@ Dos instancias de Leaflet comparten los datos: `homeMap` (banda del mapa en Expl
 - La barra es fija y transparente sobre la portada (`body.at-hero`, lo maneja `updateTopState()` con el scroll).
 - Los modales son `<div id="<nombre>-modal" class="modal hidden-el">` con un `.sheet` adentro (hoja inferior en el celular, panel centrado en escritorio), uno por archivo en `src/pagina/modales/`; se abren y cierran con `openModal(id)` / `closeModal(id)`. Cerrar `utv-modal` lo devuelve a "Preparar vehículo".
 - CSS: el orden de los `@import` de `src/estilos/index.css` es el orden de la cascada; una sección nueva va en su lugar, no al final.
+- El contenido va en `.wrap` (1280 px centrados). Lo que va de lado a lado (franja de Padok, billboard) queda fuera del `.wrap` y alinea su texto con un `.wrap` interno; la fila de imperdibles no usa `.wrap` y replica su margen izquierdo con padding, para llegar al borde derecho de la pantalla.
 - Colores: custom properties `--solis-*` en `tokens.css`. `html[data-theme="social-dark"]` (modo noche, `toggleSolisTheme()`) y la clase `.franja-goma` (mapa, garage, hojas oscuras) los cambian al goma oscuro; `.franja-salvia` es el verde de la banda del mapa y el pie. Usar siempre las variables para que la UI funcione en los dos modos. `--solis-ladrillo` (#E66115) es el naranja del logo para rótulos y links. Los `--padok-*` (bengala #FF4F1A) y `--font-padok` (Chakra Petch) son la marca invitada: solo en lo que lleva a Padok MX.
 - Íconos: sprite SVG en `src/pagina/iconos.html`; se usan con `<svg class="ic"><use href="#i-nombre"/></svg>` (o `icon('nombre')` en el JS). La interfaz no usa emojis.
 
 ### Dependencias externas en runtime
 
-Se cargan desde CDNs: Leaflet 1.9.4 y Leaflet.markercluster 1.5.3 (unpkg), Google Fonts (Jost, Manrope, JetBrains Mono, Chakra Petch) y los tiles de Google. Las fotos son locales (`public/img`): `st-*` son fotos de referencia de Wikimedia Commons hasta tener propias, `pk-*` vienen de Padok MX (también de Commons), `ig-*` son el logo y fotos del Instagram de la guardería.
+Se cargan desde CDNs: Leaflet 1.9.4 y Leaflet.markercluster 1.5.3 (unpkg), Google Fonts (Jost, Manrope, JetBrains Mono, Chakra Petch) y los tiles de Google. Las fotos son locales (`public/img`): `st-*` son fotos de referencia de Wikimedia Commons hasta tener propias, `pk-*` vienen de Padok MX (también de Commons), `ig-*` son el logo y fotos del Instagram de la guardería, `px-logo` es el logo de Pixel IT de la firma del pie (sale de `landing-pixelit/public/logo-512.png`).
 
 ## Convenciones
 

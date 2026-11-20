@@ -25,7 +25,7 @@
 .gb__tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .gb__tiles a { position: relative; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; box-shadow: 0 12px 24px -14px rgba(44, 46, 51, 0.6); }
 .gb__tiles img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.gb__hl { display: flex; gap: 22px; justify-content: center; }
+.gb__hl { display: flex; gap: 22px; justify-content: center; margin-top: 16px; }
 .gb__hl button { display: grid; justify-items: center; gap: 6px; background: none; border: 0; padding: 0; font-size: 12px; font-weight: 600; }
 .gb__hl i { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: #E66115; color: #FFFFFF; box-shadow: 0 0 0 3px var(--solis-arena), 0 0 0 5px rgba(230, 97, 21, 0.6); }
 .gb__hl i .ic { font-size: 22px; }

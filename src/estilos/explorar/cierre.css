@@ -15,3 +15,10 @@
 .foot a, .foot button { color: inherit; background: none; border: 0; padding: 0; font: inherit; letter-spacing: inherit; text-transform: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .foot__soc { display: flex; gap: 16px; font-size: 20px; }
 .foot__soc a { text-decoration: none; }
+/* Firma de Pixel IT, al final de todo */
+.foot__firma { display: flex; justify-content: center; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+.foot__firma a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+.foot__firma a:hover b { text-decoration: underline; text-underline-offset: 3px; }
+.foot__firma i { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: #FFFFFF; }
+.foot__firma img { width: 14px; height: auto; }
+.foot__firma b { font-weight: 700; letter-spacing: 0.16em; }

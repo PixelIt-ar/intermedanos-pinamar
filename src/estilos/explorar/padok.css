@@ -1,13 +1,14 @@
-/* Padok MX: franja del Enduro del Verano (arriba del billboard) */
+/* Padok MX: franja del Enduro del Verano (arriba del billboard), de lado a lado como el billboard */
 /* En el celular la foto va arriba y el texto debajo, sobre fondo liso; desde 768 px, la foto a la derecha */
-.pk-franja { position: relative; display: flex; align-items: center; margin-top: 44px; padding: 210px 22px 26px; border-radius: 16px; overflow: hidden; background: var(--goma); color: var(--faro); }
-@media (min-width: 768px) { .pk-franja { min-height: 340px; padding: 28px 24px; } }
-@media (min-width: 1024px) { .pk-franja { padding: 44px 52px; } }
+.pk-franja { position: relative; display: flex; align-items: center; margin-top: 44px; padding: 210px 0 30px; overflow: hidden; background: var(--goma); color: var(--faro); }
+@media (min-width: 768px) { .pk-franja { min-height: 340px; padding: 36px 0; } }
+@media (min-width: 1024px) { .pk-franja { min-height: 400px; padding: 56px 0; } }
+.pk-franja > .wrap { position: relative; z-index: 2; width: 100%; }
 .pk-franja > img { position: absolute; top: 0; left: 0; width: 100%; height: 300px; object-fit: cover; object-position: 60% 30%; }
 @media (min-width: 768px) { .pk-franja > img { left: 32%; width: 68%; height: 100%; object-position: 62% 35%; } }
 .pk-franja::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(18, 20, 17, 0) 0, rgba(18, 20, 17, 0) 110px, rgba(18, 20, 17, 0.88) 220px, #121411 300px); }
 @media (min-width: 768px) { .pk-franja::before { background: linear-gradient(90deg, #121411 0, #121411 32%, rgba(18, 20, 17, 0.75) 50%, rgba(18, 20, 17, 0) 78%); } }
-.pk-franja__copy { position: relative; z-index: 2; display: grid; gap: 12px; justify-items: start; width: 100%; max-width: 560px; }
+.pk-franja__copy { display: grid; gap: 12px; justify-items: start; max-width: 560px; }
 .pk-franja .pk-tag { color: var(--padok-bengala); }
 .pk-franja .h3 { font-size: clamp(26px, 3vw, 36px); }
 .pk-franja__meta { font: 500 11.5px var(--font-mono); letter-spacing: 0.1em; color: rgba(242, 239, 232, 0.78); }

@@ -1,13 +1,16 @@
-/* Imperdibles */
+/* Imperdibles: el título se alinea con el resto de la página y la fila llega hasta el borde de la pantalla.
+   No usa .wrap: el padding izquierdo de escritorio replica su margen (1280 px centrados + 56 px). */
 .imp { display: grid; gap: 26px; }
-@media (min-width: 1024px) { .imp { grid-template-columns: 280px minmax(0, 1fr); align-items: center; gap: 48px; } }
-.imp__head { display: grid; gap: 14px; justify-items: start; }
+@media (min-width: 1024px) { .imp { grid-template-columns: 280px minmax(0, 1fr); align-items: center; gap: 48px; padding-left: max(56px, calc((100% - 1280px) / 2 + 56px)); } }
+.imp__head { display: grid; gap: 14px; justify-items: start; padding: 0 20px; }
+@media (min-width: 1024px) { .imp__head { padding: 0; } }
 .imp__line { width: 48px; height: 2px; background: var(--solis-terracotta); }
 .imp__nav { display: none; gap: 10px; margin-top: 8px; }
 @media (min-width: 1024px) { .imp__nav { display: flex; } }
 .imp__nav button { width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--border-strong); background: transparent; }
 .imp__nav button:last-child { background: var(--solis-charcoal); color: var(--solis-ivory); border-color: transparent; }
-.imp__row { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; scroll-behavior: smooth; padding-bottom: 4px; }
+.imp__row { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; scroll-behavior: smooth; padding: 0 20px 4px; scroll-padding-inline: 20px; }
+@media (min-width: 1024px) { .imp__row { padding: 0 56px 4px 0; scroll-padding-inline: 0; } }
 .imp__row::-webkit-scrollbar { display: none; }
 .imp-card { position: relative; flex: 0 0 220px; aspect-ratio: 3 / 4; border-radius: 14px; overflow: hidden; scroll-snap-align: start; background: var(--solis-cream); border: 0; padding: 0; text-align: left; color: var(--faro); }
 @media (min-width: 768px) { .imp-card { flex-basis: 250px; } }
