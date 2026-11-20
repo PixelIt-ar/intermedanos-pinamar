@@ -1,6 +1,6 @@
-/* Padok MX: franja del Enduro del Verano (arriba del billboard), de lado a lado como el billboard */
+/* Padok MX: franja del Enduro del Verano, de lado a lado, entre Travesías y Planes para hoy */
 /* En el celular la foto va arriba y el texto debajo, sobre fondo liso; desde 768 px, la foto a la derecha */
-.pk-franja { position: relative; display: flex; align-items: center; margin-top: 44px; padding: 210px 0 30px; overflow: hidden; background: var(--goma); color: var(--faro); }
+.pk-franja { position: relative; display: flex; align-items: center; padding: 210px 0 30px; overflow: hidden; background: var(--goma); color: var(--faro); }
 @media (min-width: 768px) { .pk-franja { min-height: 340px; padding: 36px 0; } }
 @media (min-width: 1024px) { .pk-franja { min-height: 400px; padding: 56px 0; } }
 .pk-franja > .wrap { position: relative; z-index: 2; width: 100%; }
