@@ -4,20 +4,29 @@ import { SOCIAL_GASTRO_FEED } from '../datos/feed.js';
 import { closeModal, openModal, quickAction } from '../base/ui.js';
 import { esc, findFeed, icon, setSegActive } from '../base/utils.js';
 import { focusPinInsideOurWeb } from './mapa.js';
+import { padokUrl } from './padok.js';
 import { bookTravesia, openBeraBooking } from './reservas.js';
 
 function feedCard(item) {
+  // Las novedades de Padok llevan a padok.pixelit.ar en otra pestaña y no tienen pin ni "+ mi día"
+  const padok = item.action === 'padok';
+  const cta = padok
+    ? '<a href="' + esc(padokUrl(item.padokRuta)) + '" target="_blank" rel="noopener">' + esc(item.cta) + icon('external') + '</a>'
+    : '<button data-act="feed-book" data-id="' + item.id + '">' + esc(item.cta) + '</button>';
+  const cierre = padok
+    ? '<span class="fd__src">padok.pixelit.ar</span>'
+    : '<button data-act="pin" data-id="' + item.pinId + '" aria-label="Ver en el mapa">' + icon('pin') + 'mapa</button>' +
+      '<button data-act="feed-day" data-id="' + item.id + '">+ mi día</button>';
   return '<article class="fd">' +
     '<div class="fd__ph"><img src="' + esc(item.photo) + '" alt="" loading="lazy" style="object-position:' + (item.pos || '50% 50%') + '">' +
       '<span class="tag">' + esc(item.tag) + '</span>' +
       '<button class="fd__heart' + (item.saved ? ' on' : '') + '" data-act="feed-save" data-id="' + item.id + '" aria-label="Guardar">' + icon('heart') + '</button></div>' +
-    '<div class="fd__row"><b>' + esc(item.author) + '</b><button data-act="feed-book" data-id="' + item.id + '">' + esc(item.cta) + '</button></div>' +
+    '<div class="fd__row"><b>' + esc(item.author) + '</b>' + cta + '</div>' +
     '<p class="fd__sub">' + esc(item.dishTitle) + '</p>' +
     '<div class="fd__meta">' +
       '<button data-act="feed-like" data-id="' + item.id + '" aria-label="Me gusta">' + icon('heart') + item.likesCount.toLocaleString('es-AR') + '</button>' +
       '<button data-act="feed-comments" data-id="' + item.id + '" aria-label="Comentarios">' + icon('chat') + item.commentsList.length + '</button>' +
-      '<button data-act="pin" data-id="' + item.pinId + '" aria-label="Ver en el mapa">' + icon('pin') + 'mapa</button>' +
-      '<button data-act="feed-day" data-id="' + item.id + '">+ mi día</button>' +
+      cierre +
     '</div></article>';
 }
 

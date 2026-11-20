@@ -10,7 +10,7 @@
 3. **Agenda:** eventos de cultura, música y deporte de Pinamar, con filtros por día, localidad y categoría, más las salidas propias.
 4. **Guía:** balnearios, gastronomía, alojamiento, actividades, cultura y servicios de Pinamar, Ostende, Valeria del Mar y Cariló, cada uno con su pin.
 5. **Feed de paradores y platos (Bera y Pixel Wallet):** likes, comentarios, guardados, reservas y armado de **Mi día**.
-6. **Padok MX & Frontera Live:** ranking de pilotos y clínicas.
+6. **Padok MX & Frontera Live:** stream, clínicas de arena y la promo de [Padok MX](https://padok.pixelit.ar): franja del Enduro del Verano 2027 en la portada, podio de pilotos y accesos a la app.
 7. **Espacios comerciales:** fila de sponsors con logo, billboard con foto y tarjeta destacada en el feed.
 
 ## Código

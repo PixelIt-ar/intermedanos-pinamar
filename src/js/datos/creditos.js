@@ -1,6 +1,7 @@
 // Fotos de referencia (Wikimedia Commons) con autor y licencia
 export const PHOTO_CREDITS = [
   { what: 'Cuatriciclos en los médanos', where: 'Portada', artist: 'Sarvesh Lutchmun', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Quad_Bikes_in_Swakopmund,_Namibia.jpg' },
+  { what: 'Enduro en los médanos', where: 'Franja Padok MX', artist: 'Doug Fackiner', lic: 'CC BY 2.5', page: 'https://commons.wikimedia.org/wiki/File:DumontDunes_2005-04-25_paddle-tire.jpg' },
   { what: 'Médano y faro en Villa Gesell', where: 'Rubro La Frontera', artist: 'ANDY ABIR ALAN', lic: 'CC BY-SA 3.0', page: 'https://commons.wikimedia.org/wiki/File:Villa_Gesell_Partido,_Buenos_Aires_Province,_Argentina_-_panoramio_(20).jpg' },
   { what: 'Faro Querandí', where: 'Feed El Más Allá', artist: 'Anadiez', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Faro_Querandi.JPG' },
   { what: 'Costa de Cariló desde el aire', where: 'Rubro Paradores', artist: 'Cmasi', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Carilo_beach_view.jpg' },

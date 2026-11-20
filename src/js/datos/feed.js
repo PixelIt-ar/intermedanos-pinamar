@@ -1,4 +1,6 @@
 // Feed de paradores, platos y experiencias. cat: PARADOR / GASTRO / OFFROAD (+ filtro SAVED)
+// action: 'bera' (reserva), 'trav' (inscripción), 'pin' (mapa) o 'padok' (abre padokRuta en
+// padok.pixelit.ar; esas tarjetas no tienen pin ni "+ mi día").
 export const SOCIAL_GASTRO_FEED = [
   { id: 0, pinId: 'p2', cat: 'PARADOR', tag: 'PARADOR · SUNSET', author: 'Nómade · Luna Roja', photo: '/img/st-fogon2.webp', pos: '50% 60%', dishTitle: 'Fuegos a la leña y sunset acústico sobre el médano', likesCount: 2410, saved: true, price: 'Reservar deck (Bera)', cta: 'reserva bera', action: 'bera',
     commentsList: ['@sofi_ribeiro: El mejor atardecer de Pinamar Norte, la pesca a la leña es increíble.', '@lucho_utv: Dejás el Can-Am en el estacionamiento de arena y bajás directo al deck.'] },
@@ -10,6 +12,8 @@ export const SOCIAL_GASTRO_FEED = [
     commentsList: ['@nico_4x4: Porciones gigantes para compartir en familia.'] },
   { id: 4, pinId: 'g1', cat: 'OFFROAD', tag: 'TRAVESÍA · PADOK MX', author: 'Travesía nocturna', photo: '/img/st-utv-bosque.webp', pos: '55% 60%', dishTitle: 'Guardería Intermédanos × Padok MX, con apoyo mecánico y cena de fuegos', likesCount: 2850, saved: true, price: 'Inscribirme ($45.000)', cta: '$45.000', action: 'trav',
     commentsList: ['@tomas_maverick: La mejor experiencia de Pinamar, vas súper seguro con el apoyo mecánico.'] },
+  { id: 8, cat: 'OFFROAD', tag: 'NOVEDAD · PADOK MX', author: 'Padok MX', photo: '/img/st-cuatris.webp', pos: '60% 60%', dishTitle: 'Se abre la Cantera 2027: 14 marcas buscan pilotos de MX2 y Cuatriciclos para el Enduro del Verano', likesCount: 760, saved: false, cta: 'leer en padok', action: 'padok', padokRuta: '/novedades',
+    commentsList: ['@mati_quad: Ya subí mi media kit, ojalá me llame alguna marca para Gesell.'] },
   { id: 5, pinId: 'p6', cat: 'PARADOR', tag: 'PARADOR · AFTER', author: 'UFO Point', photo: '/img/st-dj.webp', pos: '50% 40%', dishTitle: 'After beach electrónico, sushi y DJs al atardecer', likesCount: 2290, saved: false, price: 'Reservar con Bera', cta: 'reserva bera', action: 'bera',
     commentsList: ['@valen_dj: Increíble el sonido frente al mar a las 19 hs.'] },
   { id: 6, pinId: 'p3', cat: 'PARADOR', tag: 'PARADOR · LA FRONTERA', author: 'El Más Allá', photo: '/img/st-faro.webp', pos: '50% 50%', dishTitle: 'Parada clásica de las travesías de UTV y cuatris', likesCount: 980, saved: false, price: 'Ver en el mapa', cta: 'ver pin', action: 'pin',

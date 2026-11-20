@@ -15,7 +15,10 @@
 .fd__heart.on .ic { fill: currentColor; }
 .fd__row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 0 6px; margin-top: 4px; }
 .fd__row b { font-size: 14.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.fd__row button { font: 500 10.5px var(--font-mono); letter-spacing: 0.08em; color: var(--solis-ladrillo); background: none; border: 0; padding: 0; white-space: nowrap; text-transform: uppercase; }
+.fd__row button, .fd__row a { font: 500 10.5px var(--font-mono); letter-spacing: 0.08em; color: var(--solis-ladrillo); background: none; border: 0; padding: 0; white-space: nowrap; text-transform: uppercase; }
+/* Novedades de Padok MX: el link va a padok.pixelit.ar */
+.fd__row a { display: inline-flex; align-items: center; gap: 4px; color: var(--padok-ink); text-decoration: none; }
+.fd__src { margin-left: auto; font: 500 10.5px var(--font-mono); color: var(--solis-subtle); }
 .fd__sub { padding: 0 6px; font-size: 12.5px; line-height: 1.45; color: var(--solis-muted); }
 .fd__meta { display: flex; align-items: center; gap: 14px; padding: 8px 6px 0; margin-top: 4px; border-top: 1px solid var(--border); font-size: 12.5px; color: var(--solis-muted); }
 .fd__meta button { display: inline-flex; align-items: center; gap: 5px; background: none; border: 0; padding: 0; color: inherit; }

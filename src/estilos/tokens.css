@@ -25,10 +25,15 @@
   --shadow-soft: 0 12px 28px -14px rgba(44, 46, 51, 0.25);
   --shadow-float: 0 24px 48px -18px rgba(44, 46, 51, 0.35);
   --glass-dock: rgba(27, 31, 27, 0.94);
+  /* Padok MX, marca invitada: solo en lo que lleva a padok.pixelit.ar */
+  --padok-bengala: #FF4F1A;       /* fondos de botón y números grandes */
+  --padok-tinta: #1C1C1A;         /* texto sobre bengala */
+  --padok-ink: #B3330A;           /* texto naranja chico sobre fondo claro */
   --font-display: "Jost", "Futura", "Century Gothic", system-ui, sans-serif;
   --font-serif: var(--font-display);
   --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --font-padok: "Chakra Petch", "Rajdhani", "Arial Narrow", system-ui, sans-serif;
   --top-h: 68px;
 }
 /* Goma (versión 1): modo noche y franjas oscuras */
@@ -42,6 +47,7 @@ html[data-theme="social-dark"], .franja-goma {
   --solis-subtle: #8C877C;
   --solis-ladrillo: #DCC9AD;
   --solis-signal: #7BC48A;
+  --padok-ink: #FF7A4D;
   --border: rgba(220, 201, 173, 0.16);
   --border-strong: rgba(220, 201, 173, 0.32);
   --shadow-soft: 0 14px 34px rgba(0, 0, 0, 0.45);

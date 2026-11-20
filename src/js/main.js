@@ -11,6 +11,7 @@ import { renderCategoryChips, renderLegend } from './modulos/filtros.js';
 import { jumpSearchFromHero, openGuiaWithCat, renderFullGuia, setGuiaCategory, setGuiaLoc } from './modulos/guia.js';
 import { actOnSelectedPin, addSelectedPinToMyDay, filterMapMarkers, focusPinInsideOurWeb, initInAppMaps, openMapWithCategory, popupAct, popupCta, postWazeAlert, renderMapSideList, toggleGoogleMapTileLayer, triggerInAppSOSBeacon, updateSelectedMapCard } from './modulos/mapa.js';
 import { addPlaceToMyDay, renderTimelines } from './modulos/mi-dia.js';
+import { renderPadok } from './modulos/padok.js';
 import { bookTravesia, confirmBeraReservation, confirmUTVOrder, openBeraBooking, pickSeg, subscribeWhatsapp } from './modulos/reservas.js';
 import { executeHarkVoicePlan, openSponsorDetail, renderCredits, signInUser } from './modulos/varios.js';
 
@@ -68,6 +69,7 @@ renderFullGuia();
 renderAgenda();
 renderAgendaPreview();
 renderCredits();
+renderPadok();
 updateSelectedMapCard(FULL_GUIA_DATA[0]);
 updateTopState();
 setTimeout(initInAppMaps, 250);

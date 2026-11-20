@@ -16,3 +16,18 @@
 .rank__row b { display: block; font-size: 14.5px; }
 .rank__row span { display: block; font-size: 12.5px; color: var(--solis-muted); }
 .rank__row strong { font: 700 14px var(--font-mono); }
+/* Podio de Padok (cada fila es un link a la ficha del piloto) y accesos a la app */
+.rank__head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 0 4px; }
+.rank__head > span:last-child { font: 500 10.5px var(--font-mono); letter-spacing: 0.1em; color: var(--solis-subtle); }
+.rank__list { display: grid; gap: 10px; }
+a.rank__row { color: inherit; text-decoration: none; transition: border-color 0.2s ease, transform 0.15s ease; }
+a.rank__row:hover { border-color: var(--padok-bengala); transform: translateY(-1px); }
+.pk-row > em { font: 700 26px var(--font-padok); color: var(--padok-ink); text-align: center; }
+.pk-row > .ic { font-size: 18px; color: var(--padok-ink); }
+.pk-accesos { display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 1024px) { .pk-accesos { grid-column: 1 / -1; grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.pk-acc { display: grid; gap: 4px; align-content: start; padding: 16px; border-radius: 12px; background: var(--solis-card); border: 1px solid var(--border); color: inherit; text-decoration: none; transition: border-color 0.2s ease, transform 0.15s ease; }
+.pk-acc:hover { border-color: var(--padok-bengala); transform: translateY(-1px); }
+.pk-acc b { display: flex; justify-content: space-between; align-items: center; gap: 8px; font: 600 15px var(--font-padok); letter-spacing: 0.06em; text-transform: uppercase; }
+.pk-acc b .ic { color: var(--padok-ink); }
+.pk-acc span { font-size: 13px; line-height: 1.4; color: var(--solis-muted); }

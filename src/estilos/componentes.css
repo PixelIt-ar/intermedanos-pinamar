@@ -11,6 +11,10 @@
 .btn.brand { background: #E66115; color: var(--goma); box-shadow: 0 10px 22px -10px rgba(230, 97, 21, 0.8); }
 .btn.sos { background: var(--solis-sos); color: #FFFFFF; box-shadow: 0 10px 22px -10px rgba(200, 50, 58, 0.7); }
 .btn.block { width: 100%; }
+/* Padok MX: botón y rótulo con la marca invitada, solo en lo que lleva a padok.pixelit.ar */
+.btn.pk { background: var(--padok-bengala); color: var(--padok-tinta); font: 600 13.5px/1.1 var(--font-padok); letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 0 10px 22px -10px rgba(255, 79, 26, 0.7); }
+.btn.pk:hover { box-shadow: 0 14px 26px -10px rgba(255, 79, 26, 0.85); }
+.pk-tag { font: 600 11.5px var(--font-padok); letter-spacing: 0.14em; text-transform: uppercase; color: var(--padok-ink); }
 .pill, .maps-pill-btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: 10px 18px; border-radius: 999px; border: 1px solid color-mix(in srgb, currentColor 55%, transparent);
