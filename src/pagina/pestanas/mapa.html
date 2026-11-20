@@ -1,0 +1,26 @@
+<!-- VISTA 4: MAPA (oscuro, como en la versión 1) -->
+<section id="tab-mapa" class="hidden-el">
+  <div class="map-page franja-goma">
+    <aside class="map-panel">
+      <div><p class="eyebrow">Mapa propio · sin salir de la app</p><h1 class="h3 sm" style="margin-top:6px"><span data-count="ALL"></span> lugares</h1></div>
+      <div class="search"><svg class="ic"><use href="#i-search"/></svg><input id="map-search-input" type="text" placeholder="Buscar parador, gomería, súper…" oninput="renderMapSideList()" aria-label="Buscar en el mapa"></div>
+      <div class="chips scroll" id="map-category-pills"></div>
+      <p class="map-list-h">Tocá un lugar para enfocarlo</p>
+      <div class="map-list" id="map-side-list"></div>
+      <div class="map-sel">
+        <span class="eyebrow" id="map-selected-badge">GUARDERÍA · SEDE CORVINA</span>
+        <strong id="map-selected-title">Guardería Intermédanos</strong>
+        <span class="addr" id="map-selected-addr">CORVINA 2047, PINAMAR</span>
+        <p id="map-selected-sub"></p>
+        <div class="map-sel__btns"><button class="btn" onclick="actOnSelectedPin()" id="map-selected-cta">programar salida</button><button class="pill" onclick="addSelectedPinToMyDay()">+ mi día</button></div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="pill sm" onclick="openModal('report-modal')"><svg class="ic"><use href="#i-siren"/></svg>reportar alerta</button><button class="pill sm" onclick="openModal('qr-modal')"><svg class="ic"><use href="#i-qr"/></svg>mi pase QR</button></div>
+    </aside>
+    <div class="map-wrap">
+      <div id="main-leaflet-map"></div>
+      <div class="map-ctl tr"><button class="glass-btn" id="toggle-tile-btn" onclick="toggleGoogleMapTileLayer()"><svg class="ic"><use href="#i-layers"/></svg><span>ver satélite</span></button></div>
+      <div class="map-ctl bl"><span><i class="corr-line"></i>CORREDOR SEGURO HABILITADO</span><span><i class="clu" style="width:22px;height:22px;font-size:10px">12</i>GRUPO DE LUGARES · TOCÁ PARA ABRIR</span></div>
+      <div class="map-ctl br"><button class="btn sos" onclick="openModal('sos-modal')"><svg class="ic"><use href="#i-siren"/></svg>SOS</button></div>
+    </div>
+  </div>
+</section>

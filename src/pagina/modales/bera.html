@@ -1,0 +1,14 @@
+<div id="bera-modal" class="modal hidden-el" onclick="if(event.target===this)closeModal('bera-modal')">
+  <div class="sheet"><i class="sheet__handle"></i>
+    <div class="sheet__head"><div><span class="eyebrow">Reserva Bera × Pixel Wallet</span><h3 class="h3" id="bera-modal-place">Kota Beach</h3></div><button class="close-btn" onclick="closeModal('bera-modal')" aria-label="Cerrar"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <div class="fields">
+      <div class="field"><label for="bera-time-select">Horario</label><select id="bera-time-select"><option value="13:30 hs · Almuerzo de playa">13:30 · almuerzo</option><option value="18:30 hs · Sunset y fuegos" selected>18:30 · sunset y fuegos</option><option value="21:30 hs · Cena">21:30 · cena</option></select></div>
+      <div class="two">
+        <div class="field"><label for="bera-guests-select">Personas</label><select id="bera-guests-select"><option value="2 personas">2</option><option value="4 personas" selected>4</option><option value="6 personas">6</option><option value="8+ personas">8 o más</option></select></div>
+        <div class="field"><label for="bera-sector-select">Sector</label><select id="bera-sector-select"><option value="Deck">Deck</option><option value="Primera línea">Primera línea</option><option value="Salón">Salón</option></select></div>
+      </div>
+      <div class="note"><span>Pixel Wallet + estacionamiento UTV</span><strong>15% cashback</strong></div>
+    </div>
+    <div class="stack"><button class="btn block" onclick="confirmBeraReservation()">confirmar y sumar a mi día</button><button class="pill block" onclick="closeModal('bera-modal');focusPinInsideOurWeb(window.__beraCurrentPinId || 'p1', true)">ver en el mapa</button></div>
+  </div>
+</div>

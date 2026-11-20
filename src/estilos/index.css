@@ -1,0 +1,28 @@
+/* Estilos de la app. scripts/build.mjs los junta en dist/app.css en este orden,
+   que es el orden de la cascada: una sección nueva va donde corresponda, no al final. */
+@import "./tokens.css";
+@import "./base.css";
+@import "./componentes.css";
+@import "./barra.css";
+@import "./explorar/portada.css";
+@import "./explorar/sponsors.css";
+@import "./explorar/rubros.css";
+@import "./explorar/imperdibles.css";
+@import "./explorar/guarderia.css";
+@import "./explorar/travesias.css";
+@import "./explorar/planes.css";
+@import "./explorar/billboard.css";
+@import "./explorar/feed.css";
+@import "./explorar/mapa.css";
+@import "./explorar/info-util.css";
+@import "./explorar/cierre.css";
+@import "./pestanas/comun.css";
+@import "./pestanas/agenda.css";
+@import "./pestanas/guia.css";
+@import "./pestanas/mapa.css";
+@import "./pestanas/mi-dia.css";
+@import "./pestanas/padok.css";
+@import "./dock.css";
+@import "./modales.css";
+@import "./aviso.css";
+@import "./leaflet.css";

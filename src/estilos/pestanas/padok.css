@@ -1,0 +1,18 @@
+/* Padok */
+.padok { display: grid; gap: 22px; padding-bottom: 56px; }
+@media (min-width: 1024px) { .padok { grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr); } }
+.stream { position: relative; min-height: 360px; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 22px; color: var(--faro); background: var(--goma); }
+.stream > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.55; }
+.stream > * { position: relative; }
+.stream__top { display: flex; justify-content: space-between; gap: 10px; font: 500 11px var(--font-mono); letter-spacing: 0.1em; }
+.stream__live { padding: 6px 10px; border-radius: 4px; background: var(--solis-sos); color: #FFFFFF; font-weight: 700; }
+.stream__mid { display: grid; gap: 10px; justify-items: start; max-width: 32em; }
+.stream .pill { color: var(--faro); }
+.stream__spon { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 12px 14px; border-radius: 10px; background: rgba(18, 20, 17, 0.7); font-size: 13px; }
+.stream__spon button { background: none; border: 0; padding: 0; color: var(--solis-arena); font-weight: 700; }
+.rank { display: grid; gap: 10px; align-content: start; }
+.rank__row { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 16px; border-radius: 12px; background: var(--solis-card); border: 1px solid var(--border); }
+.rank__row > em { font: 300 28px var(--font-display); font-style: normal; color: var(--solis-ladrillo); }
+.rank__row b { display: block; font-size: 14.5px; }
+.rank__row span { display: block; font-size: 12.5px; color: var(--solis-muted); }
+.rank__row strong { font: 700 14px var(--font-mono); }

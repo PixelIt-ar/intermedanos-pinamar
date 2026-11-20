@@ -1,0 +1,11 @@
+<div id="utv-modal" class="modal hidden-el" onclick="if(event.target===this)closeModal('utv-modal')">
+  <div class="sheet franja-goma"><i class="sheet__handle"></i>
+    <div class="sheet__head"><div><span class="eyebrow" id="utv-modal-eyebrow">Guardería Intermédanos · Corvina 2047</span><h3 class="h3" id="utv-modal-title">Preparar vehículo</h3></div><button class="close-btn" onclick="closeModal('utv-modal')" aria-label="Cerrar"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <div class="fields">
+      <div class="field"><label for="utv-unit-select">Unidad</label><select id="utv-unit-select"><option value="Can-Am Maverick X3 RS (Corvina 2047)">Can-Am Maverick X3 RS · Corvina 2047</option><option value="KTM 450 EXC-F (Corvina 2047)">KTM 450 EXC-F · Corvina 2047</option><option value="Can-Am Maverick X3 RS (Av. Constitución 2243)">Can-Am Maverick X3 RS · Constitución 2243</option></select></div>
+      <div class="field"><label>Presión de arena</label><input type="hidden" id="utv-psi-select" value="14 PSI (médanos)"><div class="psi" id="psi-seg"><button type="button" onclick="pickSeg('psi-seg', this, 'utv-psi-select', '12 PSI (arena blanda)')"><b>12</b>blanda</button><button type="button" class="is-active" onclick="pickSeg('psi-seg', this, 'utv-psi-select', '14 PSI (médanos)')"><b>14</b>médanos</button><button type="button" onclick="pickSeg('psi-seg', this, 'utv-psi-select', '18 PSI (firme)')"><b>18</b>firme</button></div></div>
+      <div class="field"><label>Salida</label><input type="hidden" id="utv-hour-select" value="15:00 hs"><div class="hours" id="hour-seg"><button type="button" onclick="pickSeg('hour-seg', this, 'utv-hour-select', 'en 15 minutos')">Ahora</button><button type="button" class="is-active" onclick="pickSeg('hour-seg', this, 'utv-hour-select', '15:00 hs')">15:00</button><button type="button" onclick="pickSeg('hour-seg', this, 'utv-hour-select', '17:00 hs')">17:00</button><button type="button" onclick="pickSeg('hour-seg', this, 'utv-hour-select', '19:30 hs')">19:30</button></div></div>
+    </div>
+    <div class="stack"><button class="btn block" onclick="confirmUTVOrder()">confirmar en la puerta</button><button class="pill block" onclick="closeModal('utv-modal');focusPinInsideOurWeb('g1', true)">ver la guardería en el mapa</button></div>
+  </div>
+</div>

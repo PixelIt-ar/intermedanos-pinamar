@@ -1,0 +1,14 @@
+<!-- VISTA 3: GASTRO -->
+<section id="tab-gastro" class="hidden-el">
+  <div class="wrap" style="padding-bottom:56px">
+    <div class="page-head"><div><p class="eyebrow">Gastronomía, paradores y comunidad · Bera y Pixel Wallet</p><h1 class="h3">Dónde comer, parar y ver el atardecer</h1></div><div class="page-tools"><button class="pill" onclick="openModal('ads-modal')">destacar mi parador</button><button class="btn" onclick="openModal('post-modal')"><svg class="ic"><use href="#i-plus"/></svg>subir plato o sunset</button></div></div>
+    <div class="fd-chips" id="gastro-pills" style="justify-content:flex-start">
+      <button class="chip is-active" onclick="filterGastroPage('ALL', this)">Todos</button>
+      <button class="chip" onclick="filterGastroPage('PARADOR', this)"><svg class="ic"><use href="#i-umb"/></svg>Paradores de playa y Frontera</button>
+      <button class="chip" onclick="filterGastroPage('GASTRO', this)"><svg class="ic"><use href="#i-plate"/></svg>Restaurantes</button>
+      <button class="chip" onclick="filterGastroPage('OFFROAD', this)"><svg class="ic"><use href="#i-flag"/></svg>Travesías gastronómicas</button>
+      <button class="chip" onclick="filterGastroPage('SAVED', this)"><svg class="ic"><use href="#i-heart"/></svg>Mis guardados</button>
+    </div>
+    <div class="gastro-social-grid" id="full-gastro-grid"></div>
+  </div>
+</section>

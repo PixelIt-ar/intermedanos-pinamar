@@ -1,0 +1,8 @@
+/* Dock del celular */
+.dock { position: fixed; z-index: 1000; left: 12px; right: 12px; bottom: 14px; max-width: 460px; margin: 0 auto; height: 66px; border-radius: 999px; display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; background: var(--glass-dock); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); border: 1px solid rgba(220, 201, 173, 0.18); box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35); color: #A89A86; }
+@media (min-width: 1024px) { .dock { display: none; } }
+.dock-item { display: grid; justify-items: center; gap: 3px; background: none; border: 0; padding: 0; font: 600 10.5px var(--font-sans); color: inherit; }
+.dock-item .ic { font-size: 21px; }
+.dock-item.is-active { color: var(--solis-arena); }
+.dock-plus-btn { justify-self: center; width: 50px; height: 50px; border-radius: 50%; border: 0; display: grid; place-items: center; background: var(--solis-terracotta); color: var(--goma); box-shadow: 0 8px 20px rgba(224, 122, 95, 0.45); }
+.dock-plus-btn .ic { font-size: 22px; }

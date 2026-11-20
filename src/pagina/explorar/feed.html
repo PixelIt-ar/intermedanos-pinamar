@@ -1,0 +1,15 @@
+<!-- Paradores, platos y experiencias -->
+<section class="sec" style="border-top:1px solid var(--border)">
+  <div class="wrap">
+    <div class="fd-head"><p class="eyebrow">Social gastro y beach clubs · todo en nuestro mapa</p><h2 class="h2">Paradores, platos y experiencias</h2><p class="sub">Lo que se está comiendo y viviendo hoy en Pinamar, con reserva Bera</p></div>
+    <div class="fd-chips" id="discover-pills">
+      <button class="chip is-active" onclick="filterSocialCards('ALL', this)">Todos los destacados</button>
+      <button class="chip" onclick="filterSocialCards('PARADOR', this)"><svg class="ic"><use href="#i-umb"/></svg>Paradores y sunsets</button>
+      <button class="chip" onclick="filterSocialCards('GASTRO', this)"><svg class="ic"><use href="#i-plate"/></svg>Platos y restós (Bera)</button>
+      <button class="chip" onclick="filterSocialCards('OFFROAD', this)"><svg class="ic"><use href="#i-flag"/></svg>Travesías y Padok MX</button>
+      <button class="chip" onclick="filterSocialCards('SAVED', this)"><svg class="ic"><use href="#i-heart"/></svg>Mis guardados</button>
+    </div>
+    <div class="gastro-social-grid" id="discover-social-grid"></div>
+    <div class="fd-more"><button class="btn" onclick="switchTab('gastro')">ver todos los paradores y restós <svg class="ic"><use href="#i-arrow"/></svg></button><button class="pill" onclick="openModal('post-modal')"><svg class="ic"><use href="#i-plus"/></svg>subir plato o sunset</button></div>
+  </div>
+</section>

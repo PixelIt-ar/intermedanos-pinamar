@@ -1,0 +1,17 @@
+<div id="menu-modal" class="modal hidden-el" onclick="if(event.target===this)closeModal('menu-modal')">
+  <div class="sheet"><i class="sheet__handle"></i>
+    <div class="sheet__head"><div><span class="eyebrow">Intermédanos</span><h3 class="h3">Menú</h3></div><button class="close-btn" onclick="closeModal('menu-modal')" aria-label="Cerrar"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <div class="menu-list">
+      <button onclick="switchTab('discover')"><svg class="ic"><use href="#i-home"/></svg>Explorar</button>
+      <button onclick="switchTab('agenda')"><svg class="ic"><use href="#i-ticket"/></svg>Agenda</button>
+      <button onclick="switchTab('gastro')"><svg class="ic"><use href="#i-plate"/></svg>Gastro y paradores</button>
+      <button onclick="switchTab('mapa')"><svg class="ic"><use href="#i-map"/></svg>Mapa</button>
+      <button onclick="switchTab('midia')"><svg class="ic"><use href="#i-cal"/></svg>Mi día</button>
+      <button onclick="switchTab('padok')"><svg class="ic"><use href="#i-flag"/></svg>Padok MX</button>
+      <button onclick="switchTab('guia')"><svg class="ic"><use href="#i-search"/></svg>Guía de Pinamar</button>
+      <button onclick="closeModal('menu-modal');openModal('hark-modal')"><svg class="ic"><use href="#i-mic"/></svg>Armar mi día por voz</button>
+      <button onclick="closeModal('menu-modal');toggleSolisTheme()"><svg class="ic"><use href="#i-moon"/></svg>Modo día o noche</button>
+      <button onclick="closeModal('menu-modal');openModal('ads-modal')"><svg class="ic"><use href="#i-shop"/></svg>Publicitar en la app</button>
+    </div>
+  </div>
+</div>

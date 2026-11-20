@@ -1,0 +1,34 @@
+/* Reset, contenedor y tipografía */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--solis-ivory); color: var(--solis-charcoal);
+  font-family: var(--font-sans); font-size: 15px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased; padding-bottom: 96px;
+}
+@media (min-width: 1024px) { body { padding-bottom: 0; } }
+img { max-width: 100%; display: block; }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+p { margin: 0; }
+.ic { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex: none; display: inline-block; vertical-align: -0.14em; }
+.hidden-el { display: none !important; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
+@media (min-width: 1024px) { .wrap { padding: 0 56px; } }
+
+/* Tipografía */
+.eyebrow { display: block; font: 500 11px/1.4 var(--font-mono); letter-spacing: 0.2em; text-transform: uppercase; color: var(--solis-ladrillo); margin: 0; }
+.h1 { font: 300 clamp(44px, 8.6vw, 92px)/0.95 var(--font-display); letter-spacing: 0; text-transform: uppercase; margin: 0; }
+.h2 { font: 400 clamp(22px, 2.6vw, 30px)/1.12 var(--font-display); letter-spacing: 0.1em; text-transform: uppercase; margin: 0; }
+.h3 { font: 300 clamp(28px, 3.4vw, 38px)/1.08 var(--font-display); letter-spacing: 0.04em; text-transform: uppercase; margin: 0; }
+.h3.sm { font-size: clamp(22px, 2.4vw, 26px); }
+.sub { font-size: 14px; color: var(--solis-muted); margin-top: 6px; }
+.small { font-size: 14px; line-height: 1.6; color: var(--solis-muted); }
+.mono { font-family: var(--font-mono); letter-spacing: 0.08em; }
+.sec { padding: 52px 0; }
+@media (min-width: 1024px) { .sec { padding: 72px 0; } }
+.sec-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 26px; flex-wrap: wrap; }
+.more { display: inline-flex; align-items: center; gap: 8px; font: 500 12px var(--font-mono); letter-spacing: 0.18em; text-transform: uppercase; color: var(--solis-ladrillo); background: none; border: 0; padding: 4px 0; white-space: nowrap; }

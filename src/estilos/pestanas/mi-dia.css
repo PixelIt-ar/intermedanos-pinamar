@@ -1,0 +1,19 @@
+/* Mi día */
+.midia { display: grid; gap: 28px; padding-bottom: 56px; }
+@media (min-width: 1024px) { .midia { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 40px; align-items: start; } }
+.timeline-list { display: grid; margin: 18px 0; }
+.tl { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 14px 4px; border: 0; border-bottom: 1px solid var(--border); background: none; text-align: left; width: 100%; }
+.tl:hover { background: var(--solis-cream); }
+.tl time { font: 700 13px var(--font-mono); color: var(--solis-ladrillo); }
+.tl b { display: block; font-size: 15px; }
+.tl span { display: block; font-size: 13px; color: var(--solis-muted); }
+.tl .ic { color: var(--solis-muted); font-size: 18px; }
+.garage { border-radius: 16px; padding: 24px; display: grid; gap: 14px; }
+.veh { padding: 18px; border-radius: 12px; background: var(--solis-cream); border: 1px solid var(--border); display: grid; gap: 8px; }
+.veh.main { border: 1.5px solid var(--solis-arena); }
+.veh__top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.veh__top b { font-size: 16px; }
+.veh__top span { font: 700 10.5px var(--font-mono); letter-spacing: 0.1em; padding: 5px 9px; border-radius: 999px; background: var(--solis-arena); color: var(--goma); white-space: nowrap; }
+.veh p { font-size: 13px; color: var(--solis-muted); }
+.veh__btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.veh__btns .pill { color: var(--solis-charcoal); }

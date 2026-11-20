@@ -1,0 +1,7 @@
+<div id="story-modal" class="modal hidden-el" onclick="if(event.target===this)closeModal('story-modal')">
+  <div class="sheet franja-goma"><i class="sheet__handle"></i>
+    <div class="sheet__head"><div><span class="eyebrow">Sponsor oficial</span><h3 class="h3" id="story-modal-title">Sponsor</h3></div><button class="close-btn" onclick="closeModal('story-modal')" aria-label="Cerrar"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <p id="story-modal-body" style="font-size:17px;line-height:1.5;color:var(--solis-charcoal);margin:6px 0 18px"></p>
+    <div class="stack"><button id="story-modal-cta" class="btn block" onclick="closeModal('story-modal');quickAction('Beneficio guardado en tu Pixel Wallet')">activar beneficio</button><button class="pill block" onclick="closeModal('story-modal');openModal('ads-modal')">quiero un espacio así</button></div>
+  </div>
+</div>

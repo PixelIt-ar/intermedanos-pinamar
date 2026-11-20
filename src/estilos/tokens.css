@@ -1,0 +1,64 @@
+/* Variables de color, tipografía y medidas. "Goma" es el modo noche y las franjas oscuras; "salvia", las franjas verdes. */
+:root {
+  /* Fondos de día: los mismos de la app anterior */
+  --solis-ivory: #F8F6F1;
+  --solis-cream: #F1ECE1;
+  --solis-card: #FFFFFF;
+  --solis-sand: #E6DEC8;
+  /* Marca y acentos */
+  --solis-arena: #DCC9AD;
+  --solis-terracotta: #E07A5F;
+  --solis-terracotta-dark: #C86247;
+  --solis-ladrillo: #E66115;      /* naranja del logo: rótulos, datos y links */
+  --solis-action-ink: #121411;    /* texto sobre terracota */
+  --solis-charcoal: #2C2E33;
+  --solis-muted: #5F5B55;
+  --solis-subtle: #8A847A;
+  --solis-signal: #3D7347;
+  --solis-sos: #C8323A;
+  --solis-salvia: #647660;
+  --goma: #121411;
+  --monte: #1C211C;
+  --faro: #F2EFE8;
+  --border: rgba(44, 46, 51, 0.12);
+  --border-strong: rgba(44, 46, 51, 0.24);
+  --shadow-soft: 0 12px 28px -14px rgba(44, 46, 51, 0.25);
+  --shadow-float: 0 24px 48px -18px rgba(44, 46, 51, 0.35);
+  --glass-dock: rgba(27, 31, 27, 0.94);
+  --font-display: "Jost", "Futura", "Century Gothic", system-ui, sans-serif;
+  --font-serif: var(--font-display);
+  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --top-h: 68px;
+}
+/* Goma (versión 1): modo noche y franjas oscuras */
+html[data-theme="social-dark"], .franja-goma {
+  --solis-ivory: #121411;
+  --solis-cream: #1C211C;
+  --solis-card: #1C211C;
+  --solis-sand: #252B25;
+  --solis-charcoal: #F2EFE8;
+  --solis-muted: #A89A86;
+  --solis-subtle: #8C877C;
+  --solis-ladrillo: #DCC9AD;
+  --solis-signal: #7BC48A;
+  --border: rgba(220, 201, 173, 0.16);
+  --border-strong: rgba(220, 201, 173, 0.32);
+  --shadow-soft: 0 14px 34px rgba(0, 0, 0, 0.45);
+  --shadow-float: 0 22px 48px rgba(0, 0, 0, 0.6);
+}
+.franja-goma { background: var(--solis-ivory); color: var(--solis-charcoal); }
+/* Salvia: franjas de día con texto marfil */
+.franja-salvia {
+  --solis-ivory: #647660;
+  --solis-cream: #5A6B57;
+  --solis-card: #5A6B57;
+  --solis-sand: #5A6B57;
+  --solis-charcoal: #F8F6F1;
+  --solis-muted: #F8F6F1;
+  --solis-ladrillo: #F8F6F1;
+  --solis-signal: #7BC48A;
+  --border: rgba(248, 246, 241, 0.26);
+  --border-strong: rgba(248, 246, 241, 0.5);
+  background: #647660; color: #F8F6F1;
+}

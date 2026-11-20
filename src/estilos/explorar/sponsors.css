@@ -1,0 +1,20 @@
+/* Sponsors */
+.spons { background: var(--solis-sand); border-bottom: 1px solid var(--border); padding: 14px 0 18px; }
+.spons__top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
+.spons__lab { font: 500 10.5px var(--font-mono); letter-spacing: 0.2em; color: var(--solis-muted); }
+.spons__row { display: flex; gap: 12px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x mandatory; }
+.spons__row::-webkit-scrollbar { display: none; }
+@media (min-width: 960px) { .spons__row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; } }
+.sp { flex: 0 0 300px; scroll-snap-align: start; display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 12px; background: var(--solis-card); border: 1px solid var(--border); text-align: left; min-width: 0; }
+.sp > div { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.sp__logo { flex: none; width: 46px; height: 46px; border-radius: 9px; display: grid; place-content: center; justify-items: center; gap: 1px; background: var(--solis-cream); color: var(--solis-charcoal); font: 800 13px/1 var(--font-sans); }
+.sp__logo.duo b { font-size: 8px; letter-spacing: 0.06em; }
+.sp__tag { font: 500 9.5px var(--font-mono); letter-spacing: 0.16em; color: var(--solis-ladrillo); }
+.sp b.t { font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sp small { font-size: 12px; color: var(--solis-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sp .pill { flex: none; font-size: 12.5px; padding: 7px 12px; }
+.sp.salvia { background: #647660; color: #F8F6F1; border-color: transparent; }
+.sp.salvia .sp__tag, .sp.salvia small { color: #F8F6F1; }
+.sp.salvia .sp__logo { background: #FFFFFF; }
+.sp.libre { background: transparent; border: 1px dashed rgba(230, 97, 21, 0.55); }
+.sp.libre .sp__logo { background: transparent; border: 1px dashed rgba(230, 97, 21, 0.55); color: #E66115; }

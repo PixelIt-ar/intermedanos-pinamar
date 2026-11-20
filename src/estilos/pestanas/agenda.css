@@ -1,0 +1,18 @@
+/* Agenda */
+.ag { display: grid; gap: 32px; padding-bottom: 56px; }
+@media (min-width: 1024px) { .ag { grid-template-columns: minmax(0, 1fr) 320px; gap: 48px; } }
+.ag-day { display: flex; justify-content: space-between; align-items: baseline; margin-top: 28px; padding-bottom: 8px; border-bottom: 1px solid var(--solis-charcoal); }
+.ag-day:first-child { margin-top: 0; }
+.ag-day b { font: 400 18px var(--font-display); letter-spacing: 0.14em; text-transform: uppercase; }
+.ag-day span { font: 500 10.5px var(--font-mono); letter-spacing: 0.14em; color: var(--solis-muted); text-transform: uppercase; }
+.ag-empty { padding: 26px 0; color: var(--solis-muted); }
+.ag-side { display: grid; gap: 16px; align-content: start; }
+.side-card { padding: 18px 20px; border-radius: 12px; background: var(--solis-card); border: 1px solid var(--border); display: grid; gap: 10px; }
+.perm, .catl { list-style: none; margin: 0; padding: 0; display: grid; }
+.perm li { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.perm li:last-child, .catl li:last-child { border-bottom: 0; }
+.perm .ic { color: var(--solis-ladrillo); font-size: 18px; }
+.catl li { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.catl b { display: block; font-size: 14px; }
+.catl span { display: block; font-size: 12.5px; line-height: 1.45; }
+.side-card.franja-salvia .link { color: #F8F6F1; }

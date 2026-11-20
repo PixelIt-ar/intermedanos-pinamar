@@ -1,0 +1,13 @@
+/* Travesías */
+.trav { display: grid; gap: 18px; }
+@media (min-width: 900px) { .trav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; } }
+.trav-card { display: grid; border-radius: 14px; overflow: hidden; background: var(--solis-card); border: 1px solid var(--border); }
+@media (min-width: 560px) { .trav-card { grid-template-columns: 42% minmax(0, 1fr); } }
+.trav-card__ph { position: relative; min-height: 220px; }
+.trav-card__ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.tag { position: absolute; z-index: 1; top: 12px; left: 12px; font: 700 10px var(--font-mono); letter-spacing: 0.14em; padding: 6px 9px; border-radius: 5px; background: rgba(18, 20, 17, 0.8); color: var(--faro); }
+.trav-card__body { padding: 22px 22px 22px; display: grid; gap: 10px; align-content: start; }
+.trav-card ul { list-style: none; margin: 2px 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.trav-card li { font: 500 10px var(--font-mono); letter-spacing: 0.12em; padding: 6px 9px; border-radius: 5px; background: var(--solis-cream); color: var(--solis-muted); }
+.trav-card__foot { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 6px; }
+.trav-card .pill { color: var(--solis-charcoal); }

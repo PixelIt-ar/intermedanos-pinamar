@@ -1,0 +1,28 @@
+// Fotos de referencia (Wikimedia Commons) con autor y licencia
+export const PHOTO_CREDITS = [
+  { what: 'Cuatriciclos en los médanos', where: 'Portada', artist: 'Sarvesh Lutchmun', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Quad_Bikes_in_Swakopmund,_Namibia.jpg' },
+  { what: 'Médano y faro en Villa Gesell', where: 'Rubro La Frontera', artist: 'ANDY ABIR ALAN', lic: 'CC BY-SA 3.0', page: 'https://commons.wikimedia.org/wiki/File:Villa_Gesell_Partido,_Buenos_Aires_Province,_Argentina_-_panoramio_(20).jpg' },
+  { what: 'Faro Querandí', where: 'Feed El Más Allá', artist: 'Anadiez', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Faro_Querandi.JPG' },
+  { what: 'Costa de Cariló desde el aire', where: 'Rubro Paradores', artist: 'Cmasi', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Carilo_beach_view.jpg' },
+  { what: 'Playa de Pinamar', where: 'Imperdible El Más Allá', artist: 'Andrés Franchi Ugart…', lic: 'CC BY-SA 3.0', page: 'https://commons.wikimedia.org/wiki/File:Playa_de_Pinamar_-_panoramio.jpg' },
+  { what: 'Atardecer sobre el mar', where: 'Imperdible Kota Beach', artist: 'Alexkom000', lic: 'CC BY 4.0', page: 'https://commons.wikimedia.org/wiki/File:2025-05-11_Sunset_over_the_Adriatic_Sea_seen_from_%C5%A0u%C5%A1anj_Beach,_Bar_2.jpg' },
+  { what: 'Atardecer en la costa', where: 'Sunset en Kota Beach', artist: 'Alexkom000', lic: 'CC BY 4.0', page: 'https://commons.wikimedia.org/wiki/File:2025-05-11_Sunset_over_the_Adriatic_Sea_seen_from_%C5%A0u%C5%A1anj_Beach,_Bar_1.jpg' },
+  { what: 'Fuego en la playa al atardecer', where: 'Imperdible Nómade', artist: 'I personally', lic: 'Public domain', page: 'https://commons.wikimedia.org/wiki/File:Roedhus230606.JPG' },
+  { what: 'Atardecer con gente en la playa', where: 'Feed Nómade', artist: 'Paxson Woelber', lic: 'CC BY 3.0', page: 'https://commons.wikimedia.org/wiki/File:Sunset_on_the_beach_in_Anchorage,_Alaska_-_panoramio.jpg' },
+  { what: 'Fogón nocturno en la playa', where: 'Travesía nocturna', artist: 'vastateparksstaff', lic: 'CC BY 2.0', page: 'https://commons.wikimedia.org/wiki/File:HL_Beach_Bonfire_by_sml_(7706236416).jpg' },
+  { what: 'Base techada con cuatris', where: 'Rubro Guarderías', artist: 'Renek78', lic: 'CC0', page: 'https://commons.wikimedia.org/wiki/File:Dubai_in_January_2025_04.jpg' },
+  { what: 'Cubierta off-road', where: 'Rubro Gomerías', artist: 'Agadez', lic: 'CC BY-SA 3.0', page: 'https://commons.wikimedia.org/wiki/File:Off-road_tire.JPG' },
+  { what: 'Salón de restaurante', where: 'Rubro Gastronomía', artist: 'Vyacheslav Argenberg', lic: 'CC BY 4.0', page: 'https://commons.wikimedia.org/wiki/File:Old_Gagra,_Abkhazia,_Gagripsh_Restaurant_Wooden_Interior.jpg' },
+  { what: 'Restaurante', where: 'Imperdible Tante', artist: 'Premeditated Chaos', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:St._Lawrence_restaurant_interior_dining_area_view.jpg' },
+  { what: 'Goulash con spätzle', where: 'Feed Tante', artist: 'Katrin Gilger', lic: 'CC BY-SA 2.0', page: 'https://commons.wikimedia.org/wiki/File:Gulasch_mit_Sp%C3%A4zle_(6659955595).jpg' },
+  { what: 'Paella', where: 'Feed Paxapoga', artist: 'Wilfredor', lic: 'CC0', page: 'https://commons.wikimedia.org/wiki/File:Paella_de_fruit_de_mer.jpg' },
+  { what: 'Parrilla con asado', where: 'Feed Estilo Criollo', artist: 'Aleposta', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Asado_argentino_a_la_parrilla_con_chorizos_y_achuras.jpg' },
+  { what: 'Ceviche', where: 'Feed Kota Beach', artist: 'JIP', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Ceviche_at_Stone%27s.jpg' },
+  { what: 'Fiesta con DJ', where: 'UFO Point', artist: 'Vyacheslav Argenberg', lic: 'CC BY 4.0', page: 'https://commons.wikimedia.org/wiki/File:DJ_party_at_night,_Koh_Chang,_Thailand.jpg' },
+  { what: 'Sandboard en el médano', where: 'Jornada completa', artist: 'Collinsalex2', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Sandboarding_on_the_dunes.jpg' },
+  { what: 'Motocross en arena', where: 'Padok MX', artist: 'Ulrich Giraud', lic: 'CC BY-SA 3.0', page: 'https://commons.wikimedia.org/wiki/File:Jump_(241881881).jpeg' },
+  { what: 'Ford Ranger Raptor', where: 'Billboard', artist: 'Johannes Maximilian', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Ford_Ranger_Raptor_IAA_2019_JM_0492.jpg' },
+  { what: 'Buggies en la arena', where: 'Travesía off road', artist: 'blmcalifornia', lic: 'Public domain', page: 'https://commons.wikimedia.org/wiki/File:Imperial_Sand_Dunes_Recreation_Area_(28482151682).jpg' },
+  { what: 'Cuatriciclos en las dunas', where: 'Cierre', artist: 'SaharaADV', lic: 'CC BY-SA 4.0', page: 'https://commons.wikimedia.org/wiki/File:Merzouga_dune_quad_tour.jpg' },
+  { what: 'Cuatri en un sendero del bosque', where: 'Feed travesía', artist: 'U.S. Fish and Wildlife Service Southeast Region', lic: 'Public domain', page: 'https://commons.wikimedia.org/wiki/File:ATV_on_a_muddy_trail_(5494218531).jpg' }
+];

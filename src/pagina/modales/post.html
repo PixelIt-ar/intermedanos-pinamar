@@ -1,0 +1,11 @@
+<div id="post-modal" class="modal hidden-el" onclick="if(event.target===this)closeModal('post-modal')">
+  <div class="sheet"><i class="sheet__handle"></i>
+    <div class="sheet__head"><div><span class="eyebrow">Comunidad Pinamar y Bera</span><h3 class="h3">Publicar en el feed</h3></div><button class="close-btn" onclick="closeModal('post-modal')" aria-label="Cerrar"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <div class="fields">
+      <div class="field"><label for="post-place-input">Lugar</label><input id="post-place-input" type="text" placeholder="Luna Roja, Kota Beach, Tante…"></div>
+      <div class="field"><label for="post-dish-input">Plato, sunset o experiencia</label><input id="post-dish-input" type="text" placeholder="Qué recomendás"></div>
+    </div>
+    <button class="btn block" onclick="createNewUserGastroPost()">publicar en el feed</button>
+    <button class="tl" style="margin-top:14px" onclick="closeModal('post-modal');openModal('report-modal')"><time><svg class="ic"><use href="#i-siren"/></svg></time><div><b>Reportar una alerta en el médano</b><span>Suma un pin de alerta en vivo sobre La Frontera</span></div></button>
+  </div>
+</div>

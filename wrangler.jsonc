@@ -1,7 +1,13 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "intermedanos-pinamar",
-  "main": "worker.js",
+  "main": "src/worker.js",
   "compatibility_date": "2026-11-17",
-  "workers_dev": true
+  "workers_dev": true,
+  // Antes de `wrangler dev` y `wrangler deploy` se arma dist/ desde src/ y public/.
+  // En dev se vuelve a armar cada vez que cambia algo en esas carpetas.
+  "build": { "command": "node scripts/build.mjs", "watch_dir": ["src", "public"] },
+  // Cloudflare sirve directo lo que está en dist/ (página, app.js, app.css, fotos).
+  // Las rutas que no son un archivo (la API) van al Worker.
+  "assets": { "directory": "./dist", "binding": "ASSETS" }
 }

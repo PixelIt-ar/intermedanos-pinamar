@@ -1,0 +1,6 @@
+<div id="report-modal" class="modal hidden-el" onclick="if(event.target===this)closeModal('report-modal')">
+  <div class="sheet franja-goma"><i class="sheet__handle"></i>
+    <div class="sheet__head"><div><span class="eyebrow">Alertas en vivo</span><h3 class="h3">Agregar alerta al mapa</h3></div><button class="close-btn" onclick="closeModal('report-modal')" aria-label="Cerrar"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <div class="two"><button class="pill" onclick="postWazeAlert('Cortada peligrosa en La Olla', -37.0665, -56.8235)">cortada</button><button class="pill" onclick="postWazeAlert('UTV encajado en el médano', -37.0630, -56.8190)">encajado</button><button class="pill" onclick="postWazeAlert('Control QR del Corredor Seguro', -37.0785, -56.8350)">control QR</button><button class="pill" onclick="postWazeAlert('Sunset en vivo en Kota Beach', -37.0612, -56.8140)">sunset</button></div>
+  </div>
+</div>

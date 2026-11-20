@@ -1,0 +1,8 @@
+<div id="sos-modal" class="modal hidden-el" onclick="if(event.target===this)closeModal('sos-modal')">
+  <div class="sheet franja-goma"><i class="sheet__handle"></i>
+    <div class="sheet__head"><div><span class="eyebrow" style="color:#E8888D">Auxilio mecánico · Intermédanos</span><h3 class="h3">SOS en el médano</h3></div><button class="close-btn" onclick="closeModal('sos-modal')" aria-label="Cerrar"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <p>Tu baliza se marca en el mapa de la guardería para que el auxilio salga hacia tu posición. Si es una emergencia médica, llamá al 107.</p>
+    <div class="note" style="margin:14px 0;font-family:var(--font-mono);font-size:12px"><span>La Olla Norte</span><strong>-37.0682, -56.8241</strong></div>
+    <div class="stack"><button class="btn sos block" onclick="triggerInAppSOSBeacon()"><svg class="ic"><use href="#i-siren"/></svg>activar baliza en el mapa</button><a class="pill block" href="tel:107">llamar al 107</a></div>
+  </div>
+</div>

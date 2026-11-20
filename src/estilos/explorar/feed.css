@@ -1,0 +1,24 @@
+/* Feed de paradores y platos */
+/* También la usa la pestaña Gastro */
+.fd-head { display: grid; justify-items: center; gap: 8px; text-align: center; margin-bottom: 22px; }
+.fd-chips { display: flex; gap: 8px; justify-content: flex-start; overflow-x: auto; scrollbar-width: none; margin-bottom: 26px; }
+.fd-chips::-webkit-scrollbar { display: none; }
+@media (min-width: 900px) { .fd-chips { justify-content: center; flex-wrap: wrap; } }
+.gastro-social-grid { display: grid; gap: 20px 18px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 640px) { .gastro-social-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .gastro-social-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.fd { display: grid; gap: 6px; align-content: start; padding: 8px 8px 12px; border-radius: 14px; background: var(--solis-card); border: 1px solid var(--border); box-shadow: var(--shadow-soft); min-width: 0; }
+.fd__ph { position: relative; aspect-ratio: 4 / 3; border-radius: 9px; overflow: hidden; background: var(--solis-cream); border: 0; padding: 0; }
+.fd__ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.fd__heart { position: absolute; z-index: 1; top: 10px; right: 10px; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; border: 0; background: rgba(18, 20, 17, 0.6); color: var(--faro); }
+.fd__heart.on { color: var(--solis-terracotta); }
+.fd__heart.on .ic { fill: currentColor; }
+.fd__row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 0 6px; margin-top: 4px; }
+.fd__row b { font-size: 14.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fd__row button { font: 500 10.5px var(--font-mono); letter-spacing: 0.08em; color: var(--solis-ladrillo); background: none; border: 0; padding: 0; white-space: nowrap; text-transform: uppercase; }
+.fd__sub { padding: 0 6px; font-size: 12.5px; line-height: 1.45; color: var(--solis-muted); }
+.fd__meta { display: flex; align-items: center; gap: 14px; padding: 8px 6px 0; margin-top: 4px; border-top: 1px solid var(--border); font-size: 12.5px; color: var(--solis-muted); }
+.fd__meta button { display: inline-flex; align-items: center; gap: 5px; background: none; border: 0; padding: 0; color: inherit; }
+.fd__meta button:last-child { margin-left: auto; font-weight: 700; color: var(--solis-ladrillo); }
+.fd-more { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.fd-more .pill { color: var(--solis-charcoal); }

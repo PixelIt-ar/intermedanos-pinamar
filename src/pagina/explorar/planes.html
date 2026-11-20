@@ -1,0 +1,25 @@
+<!-- Planes para hoy + eventos de la agenda + billboard -->
+<section class="sec" style="padding-top:12px">
+  <div class="wrap">
+    <div class="sec-head"><div><h2 class="h2">Planes para hoy</h2><p class="sub">Salidas y mesas con lugar</p></div><button class="more" onclick="switchTab('agenda')">ver agenda <svg class="ic"><use href="#i-arrow"/></svg></button></div>
+    <div class="plans">
+      <button class="plan" onclick="addPlaceToMyDay('Travesía nocturna guiada', 'Salida 21:00 desde Corvina 2047 · cena de fuegos', 'g1')"><span class="plan__ph"><img src="/img/st-fogon-noche.webp" alt="" loading="lazy" style="object-position:60% 75%"></span><span class="plan__row"><b>Travesía nocturna guiada</b><em>$45.000</em></span><span>21:00 HS · APOYO MECÁNICO · CENA DE FUEGOS</span></button>
+      <button class="plan" onclick="openBeraBooking('Kota Beach', 'Reserva Bera', 'p1')"><span class="plan__ph"><img src="/img/st-sunset2.webp" alt="" loading="lazy"></span><span class="plan__row"><b>Sunset en Kota Beach</b><em>RESERVA BERA</em></span><span>18:30 HS · DJ SET · 15% CASHBACK PIXEL</span></button>
+      <button class="plan" onclick="switchTab('padok')"><span class="plan__ph"><img src="/img/st-motocross.webp" alt="" loading="lazy" style="object-position:62% 55%"></span><span class="plan__row"><b>Clínica de arena Padok MX</b><em>CUPO 8</em></span><span>16:30 HS · LA OLLA NORTE · FRONTERA LIVE</span></button>
+    </div>
+    <div class="also">
+      <div class="also__h"><b>También en la agenda de Pinamar</b><span class="src" id="also-src"></span></div>
+      <div id="agenda-preview"></div>
+    </div>
+    <div class="bb">
+      <img src="/img/st-raptor.webp" alt="" loading="lazy">
+      <div class="bb__copy">
+        <span class="bb__tag">ESPACIO DE MARCA · SPONSOR EXCLUSIVO</span>
+        <span class="bb__by">Presentado por Guardería Intermédanos × Pixel Media</span>
+        <h2 class="h3">Ford Bronco &amp; Ranger Raptor<br>Off-Road Point La Frontera</h2>
+        <p class="small">Clínicas de manejo en arena, calibración sin cargo y travesías exclusivas saliendo desde Corvina 2047.</p>
+        <div class="hero__ctas"><button class="btn" onclick="openSponsorDetail('Off-Road Point La Frontera', 'Clínicas de manejo en arena, calibración sin cargo y travesías exclusivas con Ford Bronco y Ranger Raptor saliendo desde la guardería.', 'Quiero participar')">ver promo <svg class="ic"><use href="#i-arrow"/></svg></button><button class="pill" onclick="openModal('ads-modal')">comprar este espacio</button></div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+/* Imperdibles */
+.imp { display: grid; gap: 26px; }
+@media (min-width: 1024px) { .imp { grid-template-columns: 280px minmax(0, 1fr); align-items: center; gap: 48px; } }
+.imp__head { display: grid; gap: 14px; justify-items: start; }
+.imp__line { width: 48px; height: 2px; background: var(--solis-terracotta); }
+.imp__nav { display: none; gap: 10px; margin-top: 8px; }
+@media (min-width: 1024px) { .imp__nav { display: flex; } }
+.imp__nav button { width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--border-strong); background: transparent; }
+.imp__nav button:last-child { background: var(--solis-charcoal); color: var(--solis-ivory); border-color: transparent; }
+.imp__row { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; scroll-behavior: smooth; padding-bottom: 4px; }
+.imp__row::-webkit-scrollbar { display: none; }
+.imp-card { position: relative; flex: 0 0 220px; aspect-ratio: 3 / 4; border-radius: 14px; overflow: hidden; scroll-snap-align: start; background: var(--solis-cream); border: 0; padding: 0; text-align: left; color: var(--faro); }
+@media (min-width: 768px) { .imp-card { flex-basis: 250px; } }
+.imp-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.imp-card:hover img { transform: scale(1.04); }
+.imp-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(18, 20, 17, 0.86), rgba(18, 20, 17, 0.2) 45%, rgba(18, 20, 17, 0) 64%); }
+.imp-card__pin { position: absolute; z-index: 2; top: 12px; right: 12px; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: rgba(248, 246, 241, 0.22); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border: 1px solid rgba(255, 255, 255, 0.45); color: #FFFFFF; }
+.imp-card__cap { position: absolute; z-index: 2; left: 16px; right: 16px; bottom: 16px; display: grid; gap: 3px; }
+.imp-card__cap b { font-size: 16px; line-height: 1.25; }
+.imp-card__cap span { font-size: 12.5px; opacity: 0.86; }

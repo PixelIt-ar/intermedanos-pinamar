@@ -1,0 +1,23 @@
+<!-- 1. BARRA SUPERIOR: transparente sobre la portada, sólida al bajar -->
+<header class="top">
+  <div class="top__in">
+    <button class="top-logo" onclick="switchTab('discover')" aria-label="Ir al inicio"><img src="/img/ig-logo.webp" alt="">INTERMÉDANOS</button>
+    <nav class="nav" aria-label="Secciones">
+      <button class="desktop-nav__btn is-active" data-tab="discover" onclick="switchTab('discover')">explorar</button>
+      <button class="desktop-nav__btn" data-tab="agenda" onclick="switchTab('agenda')">agenda</button>
+      <button class="desktop-nav__btn" data-tab="gastro" onclick="switchTab('gastro')">gastro</button>
+      <button class="desktop-nav__btn" data-tab="mapa" onclick="switchTab('mapa')">mapa</button>
+      <button class="desktop-nav__btn" data-tab="midia" onclick="switchTab('midia')">mi día<sup id="nav-midia-count">5</sup></button>
+      <button class="desktop-nav__btn" data-tab="padok" onclick="switchTab('padok')">padok mx</button>
+      <button class="desktop-nav__btn" data-tab="guia" onclick="switchTab('guia')">guía</button>
+    </nav>
+    <div class="tools">
+      <button class="tool" onclick="jumpSearchFromHero('')" aria-label="Buscar en la guía"><svg class="ic"><use href="#i-search"/></svg></button>
+      <button class="tool desk-only" onclick="openModal('hark-modal')" aria-label="Armar el día por voz"><svg class="ic"><use href="#i-mic"/></svg></button>
+      <button class="tool desk-only" onclick="toggleSolisTheme()" aria-label="Cambiar modo día o noche"><svg class="ic"><use id="theme-toggle-icon" href="#i-moon"/></svg></button>
+      <button class="tool" onclick="openModal('login-modal')" aria-label="Ingresar"><svg class="ic"><use href="#i-user"/></svg><span class="auth-name" id="top-auth-label"></span></button>
+      <button class="tool menu-only" onclick="openModal('menu-modal')" aria-label="Menú"><svg class="ic"><use href="#i-menu"/></svg></button>
+      <button class="pill" onclick="openModal('utv-modal')">programar salida</button>
+    </div>
+  </div>
+</header>

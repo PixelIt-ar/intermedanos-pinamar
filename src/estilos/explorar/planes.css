@@ -1,0 +1,26 @@
+/* Planes y agenda corta */
+.plans { display: grid; gap: 22px; }
+@media (min-width: 768px) { .plans { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.plan { display: grid; gap: 8px; background: none; border: 0; padding: 0; text-align: left; }
+.plan__ph { aspect-ratio: 16 / 9; border-radius: 6px; overflow: hidden; background: var(--solis-cream); }
+.plan__ph img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.plan:hover .plan__ph img { transform: scale(1.04); }
+.plan__row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-top: 4px; }
+.plan__row b { font: 400 16px var(--font-display); letter-spacing: 0.12em; text-transform: uppercase; }
+.plan__row em { font: 500 12px var(--font-mono); font-style: normal; color: var(--solis-ladrillo); white-space: nowrap; }
+.plan > span { font: 500 11px var(--font-mono); letter-spacing: 0.12em; color: var(--solis-muted); text-transform: uppercase; }
+.also { margin-top: 40px; border-top: 1px solid var(--solis-charcoal); }
+.also__h { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 14px 0 6px; flex-wrap: wrap; }
+.also__h b { font: 400 15px var(--font-display); letter-spacing: 0.14em; text-transform: uppercase; }
+.src { font: 500 10px var(--font-mono); letter-spacing: 0.12em; color: var(--solis-muted); text-transform: uppercase; }
+.evr { display: grid; grid-template-columns: 54px minmax(0, 1fr) auto; gap: 6px 14px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--border); }
+@media (min-width: 768px) { .evr { grid-template-columns: 72px minmax(0, 1fr) auto auto auto; } }
+.evr time { font: 700 12.5px var(--font-mono); color: var(--solis-ladrillo); }
+.evr b { display: block; font-size: 14.5px; font-weight: 700; }
+.evr .l { display: block; font-size: 12.5px; color: var(--solis-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.evr .l i { font-style: normal; font: 500 10.5px var(--font-mono); letter-spacing: 0.1em; color: var(--solis-ladrillo); margin-right: 8px; text-transform: uppercase; }
+.evr .acts { display: flex; gap: 8px; align-items: center; grid-column: 2 / -1; }
+@media (min-width: 768px) { .evr .acts { display: contents; } }
+.evr .pill { font-size: 12.5px; padding: 7px 12px; }
+.evr .nopin { opacity: 0.4; border-style: dashed; cursor: help; }
+.evr.own { background: linear-gradient(90deg, rgba(224, 122, 95, 0.12), rgba(224, 122, 95, 0) 60%); }

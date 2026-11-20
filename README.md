@@ -4,14 +4,30 @@
 
 * **URL Live (Cloudflare Worker):** https://intermedanos-pinamar.pixelautomationar.workers.dev
 
-## Módulos Integrados
-1. **Guardería Intermédanos (`De la Corvina 2047` & `Av. Constitución 2243`):** Gestión de Box digital, pedido de UTV/Moto en puerta con presión de arena (12/14/18 PSI) y baliza SOS de Mecánica Ambulante 24/7.
-2. **Mapa Satelital Multipunto Integrado (47 Puntos en Vivo sin salir de la web):** Capas Google Maps Satélite Híbrido y Calles + traza verde del **Corredor Seguro** + los 47 pines interactivos de Pinamar (12 Paradores, 6 Guarderías, 9 Restaurantes, 8 Gomerías 4x4, 7 Supermercados y 5 Estaciones 24hs).
-3. **Social Gastro & Paradores Feed (`Powered by Bera & Pixel Wallet`):** Reseñas gastronómicas, likes y comentarios en vivo, reserva de mesas con 15% cashback y armado automático del itinerario **"Mi Día en Pinamar"**.
-4. **Padok MX & Frontera LIVE Stream:** Ranking de pilotos con sello de service oficial validado por Guardería Intermédanos.
-5. **Sistema Comercial de Banners (`Estilo Tucán News`):** Top Sponsor Leaderboard, Mid-Page Editorial Billboard y Media Kit interactivo.
+## Módulos
+1. **Guardería Intermédanos (Corvina 2047):** guardería, alquileres, lavados, service, traslados y ventas de cuatris y UTV (lunes a lunes, 9:30 a 20:30). Salida en la puerta con presión de arena (12/14/18 PSI), turnos para las dos travesías guiadas (Off road de 2 hs y Jornada completa) y baliza SOS en el mapa.
+2. **Mapa propio sin salir de la web:** capa de calles oscura o satélite, el **Corredor Seguro** y todos los lugares de la guía agrupados con número. Los conteos se calculan desde los datos.
+3. **Agenda:** eventos de cultura, música y deporte de Pinamar, con filtros por día, localidad y categoría, más las salidas propias.
+4. **Guía:** balnearios, gastronomía, alojamiento, actividades, cultura y servicios de Pinamar, Ostende, Valeria del Mar y Cariló, cada uno con su pin.
+5. **Feed de paradores y platos (Bera y Pixel Wallet):** likes, comentarios, guardados, reservas y armado de **Mi día**.
+6. **Padok MX & Frontera Live:** ranking de pilotos y clínicas.
+7. **Espacios comerciales:** fila de sponsors con logo, billboard con foto y tarjeta destacada en el feed.
 
-## Despliegue
+## Código
+
+```
+src/pagina/    HTML en parciales: barra, una por pestaña, secciones de la portada, modales
+src/estilos/   CSS por sección (index.css define el orden)
+src/js/        módulos: datos/, base/ y modulos/ (mapa, agenda, guía, feed, reservas...)
+src/worker.js  API (/api/health)
+public/img/    fotos y logo
+```
+
+`scripts/build.mjs` junta todo en `dist/` y chequea que no falten íconos, funciones ni imports. Las fotos `st-*` son de referencia (Wikimedia Commons, con sus créditos en la app) hasta tener fotos propias.
+
+## Desarrollo y despliegue
 ```bash
-npx wrangler deploy
+npm install
+npm run dev      # servidor local en http://localhost:8787
+npm run deploy   # arma dist/ y publica
 ```

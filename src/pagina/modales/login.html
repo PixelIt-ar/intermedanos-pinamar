@@ -1,0 +1,7 @@
+<div id="login-modal" class="modal hidden-el" onclick="if(event.target===this)closeModal('login-modal')">
+  <div class="sheet"><i class="sheet__handle"></i>
+    <div class="sheet__head"><div><span class="eyebrow">Pixel ID × Intermédanos</span><h3 class="h3">Ingresá</h3></div><button class="close-btn" onclick="closeModal('login-modal')" aria-label="Cerrar"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <p>Vinculá tu box de la guardería, tu pase QR Sauch y tus reservas con Bera. Es una demo: no se piden datos.</p>
+    <div class="stack" style="margin-top:16px"><button class="pill block" style="height:50px" onclick="signInUser('Google', 'invitado@demo')">continuar con Google</button><button class="btn block" style="height:50px;background:var(--solis-charcoal);color:var(--solis-ivory);box-shadow:none" onclick="signInUser('Apple', 'invitado@demo')">continuar con Apple</button></div>
+  </div>
+</div>

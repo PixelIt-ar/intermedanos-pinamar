@@ -1,0 +1,34 @@
+<!-- VISTA 2: AGENDA (nueva) -->
+<section id="tab-agenda" class="hidden-el">
+  <div class="wrap">
+    <div class="page-head"><div><p class="eyebrow">Agenda Pinamar · cultura, deporte y salidas</p><h1 class="h3">Qué hay en Pinamar</h1><p class="sub" id="agenda-count"></p></div><a class="more" href="https://agenda.pinamar.gob.ar/" target="_blank" rel="noopener">agenda municipal <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+    <div class="filters">
+      <div class="filters__row">
+        <div class="seg" id="agenda-day-seg"><button class="is-active" onclick="setAgendaDay('ALL', this)">Todo</button><button onclick="setAgendaDay('jue19', this)">Jue 19</button><button onclick="setAgendaDay('vie20', this)">Vie 20</button><button onclick="setAgendaDay('sab21', this)">Sáb 21</button><button onclick="setAgendaDay('dom22', this)">Dom 22</button></div>
+        <div class="seg" id="agenda-loc-seg"><button class="is-active" onclick="setAgendaLoc('ALL', this)">Todas</button><button onclick="setAgendaLoc('pinamar', this)">Pinamar</button><button onclick="setAgendaLoc('ostende', this)">Ostende</button><button onclick="setAgendaLoc('valeria', this)">Valeria</button><button onclick="setAgendaLoc('carilo', this)">Cariló</button></div>
+      </div>
+      <div class="chips scroll" id="agenda-cat-chips"><button class="chip is-active" onclick="setAgendaCat('ALL', this)">Todo</button><button class="chip" onclick="setAgendaCat('musica', this)">Música</button><button class="chip" onclick="setAgendaCat('cultura', this)">Cultura</button><button class="chip" onclick="setAgendaCat('deporte', this)">Deporte</button><button class="chip" onclick="setAgendaCat('offroad', this)">Off-road</button><button class="chip" onclick="setAgendaCat('FREE', this)">Solo gratis</button></div>
+    </div>
+    <div class="ag">
+      <div id="agenda-list"></div>
+      <aside class="ag-side">
+        <div class="side-card"><p class="eyebrow">Actividades permanentes</p>
+          <ul class="perm">
+            <li><svg class="ic"><use href="#i-art"/></svg>Ferias, paseos y exposiciones</li>
+            <li><svg class="ic"><use href="#i-umb"/></svg>Recreación</li>
+            <li><svg class="ic"><use href="#i-flag"/></svg>Aventura y diversión</li>
+            <li><svg class="ic"><use href="#i-target"/></svg>Deporte</li>
+            <li><svg class="ic"><use href="#i-home"/></svg>Casas de artistas</li>
+            <li><svg class="ic"><use href="#i-ticket"/></svg>Espacios culturales</li>
+          </ul><a class="link" href="https://agenda.pinamar.gob.ar/" target="_blank" rel="noopener">ver en la agenda municipal <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+        <div class="side-card franja-salvia"><p class="eyebrow">Atención al turista</p>
+          <ul class="catl">
+            <li><b>Pinamar</b><span>Av. Bunge 2552 · todos los días, 11 a 18 hs</span></li>
+            <li><b>Valeria del Mar</b><span>Av. Espora y Bathurst · todos los días, 11 a 18 hs</span></li>
+            <li><b>Cariló</b><span>Av. Divisadero y Cerezo · fines de semana largos</span></li>
+          </ul><a class="link" href="https://wa.me/5492254590372" target="_blank" rel="noopener">WhatsApp de Turismo <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+        <p class="src">Fuente: agenda cultural y deportiva de la Municipalidad de Pinamar, más las salidas de Intermédanos.</p>
+      </aside>
+    </div>
+  </div>
+</section>

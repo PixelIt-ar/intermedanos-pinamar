@@ -1,0 +1,13 @@
+/* Info útil */
+.util { display: grid; gap: 14px; }
+@media (min-width: 640px) { .util { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .util { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.ut { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px; align-items: start; padding: 18px; border-radius: 12px; background: var(--solis-card); border: 1px solid var(--border); text-align: left; text-decoration: none; }
+.ut > i { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--solis-sand); color: var(--solis-ladrillo); }
+.ut > i .ic { font-size: 20px; }
+.ut.sos > i { background: var(--solis-sos); color: #FFFFFF; }
+.ut b { display: block; font-size: 15px; margin-bottom: 2px; }
+.ut span { display: block; font-size: 13px; line-height: 1.5; color: var(--solis-muted); }
+.ut .nums { font: 700 18px var(--font-mono); letter-spacing: 0.06em; color: var(--solis-charcoal); margin-bottom: 2px; }
+.ut em { display: inline-flex; align-items: center; gap: 6px; font: 500 10.5px var(--font-mono); font-style: normal; letter-spacing: 0.12em; color: var(--solis-ladrillo); margin-top: 8px; text-transform: uppercase; }
+.ut-note { font-size: 12px; color: var(--solis-subtle); margin-top: 14px; }

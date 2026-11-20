@@ -1,0 +1,12 @@
+<!-- VISTA 7: GUÍA -->
+<section id="tab-guia" class="hidden-el">
+  <div class="wrap">
+    <div class="page-head"><div><p class="eyebrow">Guía de Pinamar</p><h1 class="h3">Todo Pinamar en un lugar</h1><p class="sub">Balnearios, alojamiento, actividades, gastronomía y servicios de las cuatro localidades, cada uno con su pin</p></div><div class="page-tools"><button class="pill" onclick="switchTab('mapa')">ver en el mapa</button><button class="btn" onclick="openModal('ads-modal')">sumar mi comercio</button></div></div>
+    <div class="filters">
+      <div class="search"><svg class="ic"><use href="#i-search"/></svg><input id="guia-search-input" oninput="renderFullGuia()" type="text" placeholder="Buscar hotel, balneario, gomería, surf…" aria-label="Buscar en la guía"></div>
+      <div class="filters__row"><div class="seg" id="guia-loc-seg"><button class="is-active" onclick="setGuiaLoc('ALL', this)">Todas</button><button onclick="setGuiaLoc('pinamar', this)">Pinamar</button><button onclick="setGuiaLoc('ostende', this)">Ostende</button><button onclick="setGuiaLoc('valeria', this)">Valeria del Mar</button><button onclick="setGuiaLoc('carilo', this)">Cariló</button></div></div>
+      <div class="chips scroll" id="guia-cat-pills"></div>
+    </div>
+    <div class="guia-grid" id="guia-directory-list"></div>
+  </div>
+</section>

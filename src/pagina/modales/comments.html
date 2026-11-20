@@ -1,0 +1,7 @@
+<div id="comments-modal" class="modal hidden-el" onclick="if(event.target===this)closeModal('comments-modal')">
+  <div class="sheet"><i class="sheet__handle"></i>
+    <div class="sheet__head"><div><span class="eyebrow">Reseñas · comunidad Pinamar</span><h3 class="h3" id="comments-modal-title">Comentarios</h3></div><button class="close-btn" onclick="closeModal('comments-modal')" aria-label="Cerrar"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <div id="comments-list-box" class="stack" style="max-height:260px;overflow-y:auto;margin-bottom:12px"></div>
+    <div style="display:flex;gap:8px"><input id="new-comment-input" class="input" type="text" placeholder="Escribí tu recomendación o tip…" onkeydown="if(event.key==='Enter'){submitNewComment()}" aria-label="Tu comentario"><button class="btn" onclick="submitNewComment()">publicar</button></div>
+  </div>
+</div>
